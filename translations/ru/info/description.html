@@ -1,0 +1,53 @@
+<!-- Describe task in general -->
+
+<p>
+    Пятница - замечательный день. Конец рабочей недели, после которой Вы можете расслабиться и заняться теми вещами, которые Вы все это время откладывали. Хорошо бы всегда знать, сколько дней осталось до пятницы, не так ли?
+</p>
+
+<p>
+Ваша задача - написать функцию, которая будет считать, сколько дней осталось до пятницы от определенного дня. В качестве аргумента будет дата в формате строки вида 'дд.мм.гггг' - день, месяц и год соотвественно.<br>
+К примеру, если заданный день недели - четверг, то до пятницы осталось ждать 1 день. Если это понедельник - 4 дня. Ну а если он как раз выпал на пятницу - то 0 дней.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Friday" src="{{MEDIA}}friday.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Дата в формате строки.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Количество дней, оставшихся до пятницы. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Пример:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">friday('23.04.2018') == 4
+friday('01.01.1999') == 0
+</pre>
+{% else %}
+<pre class="brush: python">friday('23.04.2018') == 4
+friday('01.01.1999') == 0
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Работа с датами - весьма полезный навык, который может пригодиться во многих сферах: начиная от простого упорядочивания событий по датам и вплоть до анализа изменений тенденций мирового масштаба с течением времени.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Преудсловия</strong>:<br>
+    1 <= годы <= 3000
+</p>

@@ -1,0 +1,17 @@
+
+export function friday(a) {
+
+    // your code here
+    return undefined;
+}
+
+import * as assert from 'assert';
+console.log('Example:');
+console.log(friday('12.04.2018'));
+
+// These "asserts" are used for self-checking
+assert.equal(friday('12.04.2018'), 1);
+assert.equal(friday('01.01.1999'), 0);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
+    
